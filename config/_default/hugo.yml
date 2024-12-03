@@ -1,5 +1,5 @@
 theme: blowfish
-baseURL: ''
+baseURL: 'http://geekswg.js.cool/geekblog/'
 defaultContentLanguage: zh-cn
 languageCode: zh-cn
 hasCJKLanguage: true
