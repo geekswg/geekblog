@@ -1,0 +1,173 @@
+displayName: 简体中文
+isoCode: zh-cn
+colorScheme: blowfish
+
+logo: /img/avatar.webp
+dateFormat: Jan 2, 2006
+# 网站表述。此参数将会被用作站点元数据。
+description: 机会总是垂青于有准备的人！
+# 此参数是一个 Markdown，用于网站页脚的版权声明。此参数可以包含占位符 { year } ，以此动态插入当前年份。 如果没有提供，Blowfish 将会使用网站 title 自动生成版权信息。
+copyright: © 2006 - { year } <span class='inline-block'><a href='/'
+  target='_blank'>毕少侠</a> All Rights Reserved</span>. <span
+  class='inline-block'><a href='https://beian.miit.gov.cn/'
+  target='_blank'>备案信息 </a></span>
+author:
+  name: 毕少侠
+  image: /img/avatar.webp
+  imageQuality: 96
+  headline: 毕少侠也在江湖
+  #包含作者简介的 Markdown。它将展示在文章页脚。
+  bio: Talk is cheap, show me the code.
+  links:
+    - email: mailto:geekswg@qq.com
+    - github: https://github.com/geekswg
+    - x-twitter: https://x.com/geekswg
+    # - keybase: https://keybase.io/geekswg
+    - steam: https://steamcommunity.com/id/geekswg
+
+
+defaultAppearance: light
+autoSwitchAppearance: true
+enableSearch: true
+enableCodeCopy: true
+replyByEmail: true
+# 指定最近文章中应该展示的模块。 如果没有指定，则使用文章数量最多的板块。
+mainSections:
+  - posts
+
+disableImageZoom: false
+# 禁用图片上所有图片的调整大小和优化功能。
+disableImageOptimization: true
+disableTextInHeader: false
+#设置默认背景图，用于 background 和 hero 布局下的主页。
+defaultBackgroundImage: /img/background.svg
+# 设置默认背景图片，用于所有文章的featured图片，可以通过文章目录中的 featured 图片替换。
+defaultFeaturedImage: /img/featured.svg
+# 当菜单被选择时，标记主菜单中的菜单项。
+highlightCurrentMenuArea: true
+# 开启智能目录，视图中的项目将会被高亮显示。
+smartTOC: true
+# 当开启智能目录，如果目录级别不再被聚焦时，将会隐藏更深层次的目录。
+smartTOCHideUnfocusedChildren: false
+# 定义整个站点的页头的布局，支持的参数有 basic、fixed、fixed-fill、and fixed-fill-blur.
+header:
+  layout: fixed
+footer:
+  showMenu: true
+  showCopyright: true
+  showThemeAttribution: true
+  # 是否在也页面显示外观切换器。浏览器的本地存储会缓存访问者的偏好设置
+  showAppearanceSwitcher: true
+  showScrollToTop: true
+homepage:
+  # 首页布局参数。合法的参数值有： page、profile、hero、card、background 或 custom。当你设置为 custom 时，
+  # 你必须创建 /layouts/partials/home/custom.html 文件以定制自己的布局。参考主页布局来获取更多信息。
+  layout: background
+  # 在 hero、card、background 布局中使用的图像。图片可以来自于本地的资源目录，也可以是外部图像 URL。参考 主页布局 来获取更多信息。
+  # homepageImage: /img/bg.jpg
+  showRecent: true
+  showRecentItems: 6
+  showMoreLink: true
+  showMoreLinkDest: posts
+  cardView: true
+  # 增强列表中卡片的宽度，使其可以占据可用的全部宽度。
+  cardViewScreenWidth: true
+  layoutBackgroundBlur: true
+article:
+  
+  showDate: true
+  showViews: true
+  # 是否显示文章点赞量。这需要集成 firebase ，具体可以看下面。
+  showLikes: true
+  showDateOnlyInArticle: false
+  showDateUpdated: true
+  showAuthor: true
+  # 缩略图是否会在每个页面中作为 hero 图像显示。
+  showHero: true
+  # hero 图像的展示样式，可选的参数值有：basic、big、background、thumbAndBackground。
+  heroStyle: background
+  # 向下滚动文章页时，是否模糊背景图。
+  layoutBackgroundBlur: true
+  showBreadcrumbs: true
+  showDraftLabel: true
+  showEdit: true
+  editURL: https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content
+  # 当激活 article.showEdit 参数，是否将文章的路径附加到 article.editURL 参数所设置的 URL 后面。
+  editAppendPath: true
+  # 是否默认显示打开系列模块
+  seriesOpened: false
+  showHeadingAnchors: true
+  showPagination: true
+  # 是否翻转下一篇/上一篇文章链接的方向。
+  invertPagination: false
+  showReadingTime: true
+  showTableOfContents: true
+  # 为文章显示相关内容。如果你想要启用此功能，请检查 config.toml 文件并复制所有 related 相关的参数，如果你想自定义，也可以对 config.toml 添加额外配置。更多内容请参考 Hugo 文档 中关于 related 的内容。
+  showRelatedContent: true
+  relatedContentLimit: 6
+  # 是否显示文章的分类或标签信息。
+  showTaxonomies: true
+  showAuthorsBadges: true
+  showWordCount: true
+  # 在partials/comments.html添加评论代码
+  showComments: true
+  sharingLinks:
+    - linkedin
+    - twitter
+    - bluesky
+    - reddit
+    - whatsapp
+    - telegram
+    - pinterest
+    - facebook
+    - email
+  showZenMode: true
+list:
+  showHero: true
+  heroStyle: background
+  layoutBackgroundBlur: true
+  layoutBackgroundHeaderSpace: false
+  showBreadcrumbs: true
+  showSummary: false
+  showViews: false
+  showLikes: false
+  showTableOfContents: true
+  showCards: true
+  orderByWeight: true
+  groupByYear: false
+  cardView: true
+  cardViewScreenWidth: false
+  constrainItemsWidth: false
+sitemap:
+  excludedKinds: []
+taxonomy:
+  showTermCount: true
+  showHero: true
+  heroStyle: background
+  showBreadcrumbs: false
+  showViews: false
+  showLikes: false
+  showTableOfContents: true
+  cardView: false
+term:
+  showHero: true
+  heroStyle: background
+  showBreadcrumbs: false
+  showViews: false
+  showLikes: false
+  showTableOfContents: true
+  groupByYear: false
+  cardView: true
+  cardViewScreenWidth: false
+firebase: {}
+fathomAnalytics: {}
+umamiAnalytics: {}
+selineAnalytics: {}
+buymeacoffee:
+  identifier: nunocoracao
+  globalWidget: false
+  globalWidgetMessage: ""
+  globalWidgetColor: "#FFDD00"
+  globalWidgetPosition: Right
+verification: {}
+rssnext: {}

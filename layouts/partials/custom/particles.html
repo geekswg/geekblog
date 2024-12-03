@@ -1,0 +1,31 @@
+<div id="particles-js"></div>
+<style>
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+</style>
+<script src="/plugins/particles/particles.min.js "></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let confArr = ['','-star','-rain','-rainbow','-foggy',"-snow"];
+        let conf = confArr[Math.floor(Math.random() * confArr.length)]
+        let finalConf = '/plugins/particles/particlesjs-config'+conf+'.json';
+        if(isMobile()){
+            finalConf = '/plugins/particles/particlesjs-config-mobile.json';
+        }
+        //finalConf = '/plugins/particles/particlesjs-config-snow.json';
+        particlesJS.load('particles-js', finalConf, function() {
+            console.log('粒子特效背景添加成功=>'+finalConf);
+        }); 
+    })
+    function isMobile() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        return /iphone|ipod|android|webos|blackberry|iemobile|opera mini/.test(userAgent);
+      
+    }
+</script>
